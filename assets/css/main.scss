@@ -1,0 +1,66 @@
+---
+---
+
+@import "minimal-mistakes";
+
+// The style of the navigation and web title
+.greedy-nav .site-title {
+    font-family: Tahoma, sans-serif !important;
+    font-size: 1.2rem !important;
+    color: #383638 !important;
+}
+
+.masthead__menu-item a {
+    font-family: 'Roboto', 'Open Sans', sans-serif !important;
+    font-size: 0.8rem !important;
+    color: #666 !important;
+}
+
+.masthead__menu-item a:hover {
+    color: #007acc !important; 
+}
+
+
+// The style of Header title
+.page__title {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1.5rem !important;
+    font-weight: 350;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+// The style of the News Block
+.news-section {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    margin-top: 2em;
+}
+
+.news-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+}
+
+.news-item {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.news-item strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.news-item b {
+    color: #000;
+    font-size: 18px;
+}
+
+.news-item p {
+    font-size: 15px;
+    color: #666;
+}
+
