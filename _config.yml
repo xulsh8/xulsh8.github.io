@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-#remote_theme: "mmistakes/minimal-mistakes@master"
-theme       : "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@master"
+#theme       : "minimal-mistakes-jekyll"
 minimal_mistakes_skin   : contrast
 
 # Site Setting
