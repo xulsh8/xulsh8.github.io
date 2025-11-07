@@ -17,11 +17,13 @@
 #remote_theme: "mmistakes/minimal-mistakes@master"
 theme       : "minimal-mistakes-jekyll"
 minimal_mistakes_skin   : contrast
-
+baseurl                 : ""
+url                     : https://xulsh8.github.io
 # Site Setting
 title                   : Code Island
 description             : "A simple personal learning record website"
 repository              : "xulsh8/xulsh8.github.io"
+
 enable_copy_code_button : true
 search                  : true
 
