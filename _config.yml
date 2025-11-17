@@ -81,8 +81,9 @@ defaults:
       type: posts
     values:
       layout: single
-#      classes: wide
+      classes: wide
       toc: true
+      toc_label: "目录  Content"
       toc_sticky: true
       author_profile: false
       read_time: true
