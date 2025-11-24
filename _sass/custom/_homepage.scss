@@ -1,0 +1,83 @@
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+
+#main {
+    @include clearfix;
+    margin-inline: auto;
+    padding-inline: 1em;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    max-width: 100%;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+
+    @include breakpoint($x-large) {
+        max-width: $max-width;
+    }
+}
+
+.typing-js {
+    font-family: "Consolas", monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    white-space: pre-wrap;
+    min-height: 1.2em;
+    text-align: center;
+}
+
+.typing-js::after {
+    content: "";
+    display: inline-block;
+    width: .12em;
+    height: 1em;
+    margin-left: .12em;
+    vertical-align: middle;
+    background: currentColor; 
+    opacity: 0;
+    transition: opacity .12s linear;
+}
+
+.typing-js.caret-visible::after {
+    opacity: 1;
+    animation: blink-caret .7s steps(1) infinite;
+}
+
+@keyframes blink-caret {
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.home__image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    .content {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &.animate-reveal {
+        transform-origin: center;
+        transform: scaleX(0);
+        animation: reveal-horizontal 1.2s ease-out forwards;
+    }
+}
+
+@keyframes reveal-horizontal {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}

@@ -1,7 +1,5 @@
 main:
-  - title: "Home"
+  - title: "首页"
     url: /
-  - title: "Repository"
-    url: /
-  - title: "Notes"
+  - title: "笔记"
     url: /notes/

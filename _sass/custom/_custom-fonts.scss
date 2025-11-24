@@ -1,0 +1,85 @@
+// The style of the navigation and web title
+.greedy-nav .site-title {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.masthead__menu-item a {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.masthead__menu-item a:hover {
+    color: #8b0000 ;
+}
+
+
+// The style of title
+.page__title {
+    font-family: "Microsoft YaHei", serif;
+    font-size: 1.5rem;
+    font-weight: 350;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+.archive__item-title {
+    font-family: "Microsoft YaHei", serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    a[rel="permalink"] {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a[rel="permalink"]:hover {
+        color: #8b0000;
+    }
+}
+
+.archive__item-excerpt {
+    font-size: 0.7em;
+}
+
+//The size of font
+.page__content {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+// The style of the News Block
+.news-section {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    margin-top: 2em;
+}
+
+.news-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+}
+
+.news-item {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.news-item strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.news-item b {
+    color: #000;
+    font-size: 18px;
+}
+
+.news-item p {
+    font-size: 15px;
+    color: #666;
+}

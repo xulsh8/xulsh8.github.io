@@ -1,9 +1,9 @@
 ---
-title: "Beyond lines of code lies a journey"
+excerpt: "Beyond lines of code lies a journey"
 permalink: /
-layout: splash          # 使用首页布局
+layout: homepage       # 使用首页布局
 header:			# 页面顶部横幅设置
-  overlay_color: "#000"
+  color: "#000"
 
 news_row:
   - title: 网站上线
@@ -12,7 +12,7 @@ news_row:
 ---
 
 <div class="news-section">
-  <h2>📰 News</h2>
+  <h2>🏠 首页</h2>
   {% for item in page.news_row %}
     <div class="news-item">
       <strong>{{ item.date }}</strong> - <b>{{ item.title }}</b><br>
@@ -20,3 +20,4 @@ news_row:
     </div>
   {% endfor %}
 </div>
+
