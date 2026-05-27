@@ -34,6 +34,7 @@ menu:
 google_analytics: G-KS7EDB6BRM
 
 # Build Settings
+theme: null
 paginate: 10
 post_ext: md
 page_ext: md
