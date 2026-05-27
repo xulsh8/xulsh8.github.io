@@ -1,107 +1,131 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site Information
+title: Tw93
+description: "Tw93 的个人博客，杭州产品工程师，写一些关于产品工程、AI Coding、开源工具的思考"
+url: https://tw93.fun
+repo: tw93/tw93.github.io
+lang: zh-CN
+encoding: utf-8
+timezone: Africa/El_Aaiun
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Author Information (for SEO and AI crawlers)
+author:
+  name: Tw93
+  email: tw93@qq.com
+  url: https://tw93.fun
+  twitter: HiTw93
+  github: tw93
 
-remote_theme: "mmistakes/minimal-mistakes@master"
-#theme       : "minimal-mistakes-jekyll"
-minimal_mistakes_skin   : contrast
-baseurl                 : ""
-url                     : https://xulsh8.github.io
-# Site Setting
-title                   : Code Island
-description             : "A simple personal learning record website"
-repository              : "xulsh8/xulsh8.github.io"
+# Social Media and External URLs
+github: tw93
+zhihu: tw93
+twitter: HiTw93
+v2ex: tw93
+menu:
+  - title: "Weekly"
+    url: "https://weekly.tw93.fun/"
+  - title: "GitHub"
+    url: "https://github.com/tw93"
+  - title: "Twitter"
+    url: "https://twitter.com/HiTw93"
+  - title: "About"
+    url: "/about.html"
 
-enable_copy_code_button : true
-search                  : true
+# SEO and Analytics
+google_analytics: G-KS7EDB6BRM
 
-# Build settings
+# Build Settings
+paginate: 10
+post_ext: md
+page_ext: md
+post_layout: post
+page_layout: page
+titlecase: true
+future: true
+highlighter: rouge
 markdown: kramdown
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink: /:year-:month-:day/:title.html
+sass:
+  sass_dir: _sass
+  style: compressed
 
-include:
-  - _pages
+webrick:
+  headers:
+    "Access-Control-Allow-Origin": "*"
+    "Access-Control-Allow-Methods": "GET, OPTIONS"
+    "Access-Control-Allow-Headers": "Content-Type, X-Requested-With"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+collections:
+  posts:
+    output: true
+    permalink: /:year-:month-:day/:title.html
+  posts_en:
+    output: true
+    permalink: /en/:year-:month-:day/:title.html
+    sort_by: date
 
-# Plugins (previously gems:)
+include: [".htaccess", "robots.txt", "llms.txt", "llms-full.txt", "api", "projects", "6ff2b87724ac930114bf05c74db50bb5.txt"]
+exclude:
+  [
+    "Gemfile",
+    "Gemfile.lock",
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "node_modules",
+    "SEO_GUIDE.md",
+    "CLAUDE.md",
+  ]
+
+# Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-pdf-embed
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-
+# Sitemap Settings
 defaults:
-  # _posts
   - scope:
-      path: "_posts"
-      type: posts
+      path: "images/**/*"
     values:
-      layout: single
-      classes: wide
-      toc: true
-      toc_label: "目录  Content"
-      toc_sticky: true
-      author_profile: false
-      read_time: true
-      comments: false
-      share: false
-      related: false
-  # _pages
+      sitemap: false
   - scope:
-      path: "_pages"
-      type: pages
+      path: "js/**/*"
     values:
-      layout: single
-      author_profile: false
-      classes: wide
+      sitemap: false
+  - scope:
+      path: "css/**/*"
+    values:
+      sitemap: false
+  - scope:
+      path: "_sass/**/*"
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sitemap:
+        priority: 0.8
+        changefreq: weekly
+  - scope:
+      path: ""
+      type: "posts_en"
+    values:
+      sitemap:
+        priority: 0.8
+        changefreq: weekly
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      sitemap:
+        priority: 0.6
+        changefreq: monthly
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Custom Site Settings
+showBuyCoffee: true
+payImage: //gw.alipayobjects.com/zos/k/vb/1.png
+assetUrl: //tw93.fun/images/
+defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+

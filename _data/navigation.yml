@@ -1,5 +1,0 @@
-main:
-  - title: "首页"
-    url: /
-  - title: "笔记"
-    url: /notes/
