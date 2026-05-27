@@ -1,34 +1,34 @@
 # Site Information
-title: Tw93
-description: "Tw93 的个人博客，杭州产品工程师，写一些关于产品工程、AI Coding、开源工具的思考"
-url: https://tw93.fun
-repo: tw93/tw93.github.io
+title: Code Island
+description: ""
+url: https://xulsh8.github.io
+repo: xulsh8/xulsh8.github.io
 lang: zh-CN
 encoding: utf-8
 timezone: Africa/El_Aaiun
 
 # Author Information (for SEO and AI crawlers)
 author:
-  name: Tw93
-  email: tw93@qq.com
-  url: https://tw93.fun
-  twitter: HiTw93
-  github: tw93
+  name: 
+  email: 
+  url: https://xulsh8.github.io
+  twitter: 
+  github: 
 
 # Social Media and External URLs
-github: tw93
-zhihu: tw93
-twitter: HiTw93
-v2ex: tw93
+github: 
+zhihu: 
+twitter: 
+v2ex: 
 menu:
-  - title: "Weekly"
-    url: "https://weekly.tw93.fun/"
+  # - title: "Weekly"
+  #   url: "https://weekly.tw93.fun/"
   - title: "GitHub"
-    url: "https://github.com/tw93"
-  - title: "Twitter"
-    url: "https://twitter.com/HiTw93"
-  - title: "About"
-    url: "/about.html"
+    url: "https://github.com/xulsh8"
+  # - title: "Twitter"
+  #   url: "https://twitter.com/HiTw93"
+  # - title: "About"
+  #   url: "/about.html"
 
 # SEO and Analytics
 google_analytics: G-KS7EDB6BRM
@@ -124,7 +124,7 @@ defaults:
         changefreq: monthly
 
 # Custom Site Settings
-showBuyCoffee: true
+showBuyCoffee: False
 payImage: //gw.alipayobjects.com/zos/k/vb/1.png
 assetUrl: //tw93.fun/images/
 defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
