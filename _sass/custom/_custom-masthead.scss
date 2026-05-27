@@ -8,7 +8,7 @@
 //  -webkit-animation: $intro-transition;
 //  animation: $intro-transition;
 //  -webkit-animation-delay: 0.15s;
-//  animation-delay: 0.15s;
+//  animation: delay: 0.15s;
 //  z-index: 20;
 
 //  &__inner-wrap {
@@ -50,7 +50,7 @@
 //  align-self: center;
   
 //  font-weight: bold;
-  // z-index: 20;
+//  // z-index: 20;
 //}
 
 //.site-subtitle {
@@ -85,22 +85,30 @@
     list-style-type: none;
     white-space: nowrap;
 
-    font-family: "Microsoft YaHei", sans-serif;
-    font-size: 0.85rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
     color: #666;
 
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     a:hover {
-        color: #8b0000;
+        color: #5ba4cf;
     }
 
     &--lg {
         padding-inline-end: 2em;
-        font-weight: 700;
+        font-weight: 600;
     }
 }
 
 .greedy-nav .site-title {
-    font-family: Tahoma, sans-serif;
-    font-size: 1.4rem;
-    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
 }

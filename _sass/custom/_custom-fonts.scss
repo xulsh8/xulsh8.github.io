@@ -1,30 +1,56 @@
-// The style of title
+// 全局字体配置
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$code-font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", Consolas, monospace;
+$heading-font-family: $base-font-family;
+
+// 全局基础字号
+html {
+    font-size: 16px;
+}
+
+// 正文样式
+body {
+    font-family: $base-font-family;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333;
+}
+
+// 页面标题
 .page__title {
-    font-family: "Microsoft YaHei", serif;
-    font-size: $type-size-3;
-    font-weight: 350;
-    letter-spacing: 1px;
+    font-family: $heading-font-family;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     margin-bottom: 1em;
+    line-height: 1.25;
 }
 
-//The size of font
+// 页面内容区域
 .page__content {
-    font-size: 1.125rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.7;
+    
+    p, li, dl {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
 }
 
-// The style of the News Block
+// 新闻区块样式
 .news-section {
-    font-family: "Microsoft YaHei", serif;
-    font-size: 18px;
+    font-family: $base-font-family;
+    font-size: 1rem;
     margin-top: 2em;
 }
 
 .news-section h2 {
-    font-size: 30px;
-    font-weight: 700;
-    border-bottom: 2px solid #ddd;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
     padding-bottom: 0.3em;
+    margin-bottom: 1em;
 }
 
 .news-item {
@@ -33,16 +59,32 @@
 }
 
 .news-item strong {
-    color: #333;
-    font-size: 16px;
+    color: #666;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .news-item b {
-    color: #000;
-    font-size: 18px;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .news-item p {
-    font-size: 15px;
+    font-size: 0.875rem;
     color: #666;
+    line-height: 1.6;
+}
+
+// 代码样式
+code, pre {
+    font-family: $code-font-family;
+    font-size: 0.875rem;
+}
+
+:not(pre) > code {
+    font-size: 0.875em;
+    padding: 0.15em 0.4em;
+    background: #f5f5f5;
+    border-radius: 4px;
 }
