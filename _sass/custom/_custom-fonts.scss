@@ -1,40 +1,21 @@
 // The style of title
 .page__title {
     font-family: "Microsoft YaHei", serif;
-    font-size: 1.5rem;
+    font-size: $type-size-3;
     font-weight: 350;
     letter-spacing: 1px;
     margin-bottom: 1em;
 }
 
-.archive__item-title {
-    font-family: "Microsoft YaHei", serif;
-    font-size: 1rem;
-    font-weight: 400;
-
-    a[rel="permalink"] {
-        color: #000;
-        text-decoration: none;
-    }
-
-    a[rel="permalink"]:hover {
-        color: #8b0000;
-    }
-}
-
-.archive__item-excerpt {
-    font-size: 0.7em;
-}
-
 //The size of font
 .page__content {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
 }
 
 // The style of the News Block
 .news-section {
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Microsoft YaHei", serif;
     font-size: 18px;
     margin-top: 2em;
 }

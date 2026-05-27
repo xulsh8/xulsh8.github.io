@@ -1,7 +1,7 @@
 function typewriter(el, text, options = {}) {
-    const delay = options.delay ?? 60; // 每字符 60ms
+    const delay = options.delay ?? 60; 
     const loop = options.loop ?? false;
-    const pauseAfter = options.pauseAfter ?? 1200; // 全文显示后停留时间
+    const pauseAfter = options.pauseAfter ?? 1200;
     let i = 0;
     el.textContent = "";
     function step() {

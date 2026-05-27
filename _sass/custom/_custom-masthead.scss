@@ -81,22 +81,22 @@
 //}
 
 .masthead__menu-item {
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
+    display: block;
+    list-style-type: none;
+    white-space: nowrap;
 
-  font-family: "Microsoft YaHei", sans-serif;
-  font-size: 0.85rem;
-  color: #666;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 0.85rem;
+    color: #666;
 
-  a:hover {
-    color: #8b0000;
-  }
+    a:hover {
+        color: #8b0000;
+    }
 
-  &--lg {
-    padding-inline-end: 2em;
-    font-weight: 700;
-  }
+    &--lg {
+        padding-inline-end: 2em;
+        font-weight: 700;
+    }
 }
 
 .greedy-nav .site-title {
