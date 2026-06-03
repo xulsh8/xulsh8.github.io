@@ -71,43 +71,6 @@
       <textPath xlink:href="#svg-title-path">{{ headerText }}</textPath>
     </text>
 
-        <!-- 光标动画 -->
-    <line 
-      id="typing-cursor" 
-      x1="80" y1="110" x2="80" y2="130" 
-      stroke="#ffffff" 
-      stroke-width="2"
-      stroke-linecap="round"
-    >
-      <!-- 闪烁效果 -->
-      <animate 
-        attributeName="opacity" 
-        values="1;0;1" 
-        dur="0.8s" 
-        repeatCount="indefinite" 
-        begin="0s"
-      />
-      <!-- 跟随文字移动 -->
-      <animate 
-        attributeName="x1" 
-        from="80" 
-        to="1600" 
-        dur="{{ typingMs }}ms" 
-        repeatCount="1" 
-        fill="freeze" 
-        begin="0s"
-      />
-      <animate 
-        attributeName="x2" 
-        from="80" 
-        to="1600" 
-        dur="{{ typingMs }}ms" 
-        repeatCount="1" 
-        fill="freeze" 
-        begin="0s"
-      />
-    </line>
-
   </svg>
   <!-- <canvas id="J_firework_canvas" aria-hidden="true" role="presentation"></canvas> -->
 </div>
