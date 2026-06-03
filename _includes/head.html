@@ -21,7 +21,7 @@
   {% assign og_title = page.title | default: site.title %}
   {% assign og_description = page.summary | default: site.description %}
   {% assign og_image = page.feature | default:
-  '/assets/images/icon-420-420.svg' | relative_url %}
+  '/assets/images/icon-512-512.svg' | relative_url %}
   
 
   {% if page.feature %}
@@ -48,7 +48,7 @@
   <!-- Twitter Metadata -->
   {% if page.layout == "post" %}
   {% assign twitter_image = page.feature | default:
-  '/assets/images/icon-420-420.svg' | relative_url %}
+  '/assets/images/icon-512-512.svg' | relative_url %}
   <meta name="twitter:card" content="{% if page.feature %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:creator" content="@{{ site.twitter }}">
   <meta name="twitter:site" content="{{ site.url }}">
@@ -90,7 +90,7 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg+xml"
-    href="{{ '/assets/images/icon-420-420.svg' | relative_url }}">
+    href="{{ '/assets/images/icon-512-512.svg' | relative_url }}">
 
   <!-- Additional Meta Tags -->
   <meta name="HandheldFriendly" content="True">
@@ -130,7 +130,7 @@
       "name": "{{ site.title }}",
       "logo": {
         "@type": "ImageObject",
-        "url": ”{{ ‘/assets/images/icon-420-420.svg' | relative_url }}“
+        "url": ”{{ ‘/assets/images/icon-512-512.svg' | relative_url }}“
       }
     },
     "description": "{{ page.summary | default: page.excerpt | strip_html | truncate: 160 | default: site.description }}",
