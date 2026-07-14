@@ -5,15 +5,15 @@ layout: none
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tw93 Blog (English)</title>
-    <description>English posts from Tw93.</description>
+    <title>Code Island</title>
+    <description>English posts from xulsh.</description>
     <image>
       <url>https://gw.alicdn.com/imgextra/i1/O1CN01BjlaXE1auDGoniJGl_!!6000000003389-2-tps-480-444.png</url>
     </image>
-    <follow_challenge>
-      <feedId>41147805272531976</feedId>
-      <userId>42909600318350336</userId>
-    </follow_challenge>
+<!--    <follow_challenge>-->
+<!--      <feedId>41147805272531976</feedId>-->
+<!--      <userId>42909600318350336</userId>-->
+<!--    </follow_challenge>-->
     <link>{{ site.url }}/en</link>
     <atom:link href="{{ site.url }}/en/feed.xml" rel="self" type="application/rss+xml" />
     <language>en-US</language>

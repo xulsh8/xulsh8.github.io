@@ -1,4 +1,4 @@
-# robots.txt for tw93.fun
+# robots.txt for Code Island
 # Allow all search engines and AI crawlers
 
 User-agent: *
@@ -9,7 +9,7 @@ Disallow: /js/
 Disallow: /.git/
 
 # Sitemap
-Sitemap: https://tw93.fun/sitemap.xml
+Sitemap: https://xulsh8.github.io/sitemap.xml
 
 # AI Crawlers - Explicitly allow for better indexing
 User-agent: GPTBot

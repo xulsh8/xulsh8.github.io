@@ -1,41 +1,37 @@
 # Site Information
-title: Code Island
-description: ""
+title: BitIsle
+description: "记录技术学习、模型训练与个人思考的个人博客。"
 url: https://xulsh8.github.io
 repo: xulsh8/xulsh8.github.io
 lang: zh-CN
 encoding: utf-8
-timezone: Africa/El_Aaiun
+timezone: Asia/Shanghai
 
 # Author Information (for SEO and AI crawlers)
 author:
-  name: 
-  email: 
+  name: xulsh
+  email:
   url: https://xulsh8.github.io
-  twitter: 
-  github: 
+  twitter:
+  github: xulsh8
 
 # Social Media and External URLs
-github: 
-zhihu: 
-twitter: 
-v2ex: 
+github: xulsh8
+zhihu:
+twitter:
+v2ex:
 menu:
-  # - title: "Weekly"
-  #   url: "https://weekly.tw93.fun/"
-  - title: "GitHub"
-    url: "https://github.com/xulsh8"
-  # - title: "Twitter"
-  #   url: "https://twitter.com/HiTw93"
-  # - title: "About"
-  #   url: "/about.html"
+  - title: "笔记"
+    url: "/notes.html"
+  - title: "杂谈"
+    url: "/essays.html"
 
 # SEO and Analytics
-google_analytics: G-KS7EDB6BRM
+google_analytics:
 
 # Build Settings
 theme: null
-paginate: 10
+#paginate: 10
 post_ext: md
 page_ext: md
 post_layout: post
@@ -64,7 +60,7 @@ collections:
     permalink: /en/:year-:month-:day/:title.html
     sort_by: date
 
-include: [".htaccess", "robots.txt", "llms.txt", "llms-full.txt", "api", "projects", "6ff2b87724ac930114bf05c74db50bb5.txt"]
+include: ["robots.txt"]
 exclude:
   [
     "Gemfile",
@@ -106,6 +102,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      math: false
       sitemap:
         priority: 0.8
         changefreq: weekly
@@ -127,6 +124,5 @@ defaults:
 # Custom Site Settings
 showBuyCoffee: False
 payImage: //gw.alipayobjects.com/zos/k/vb/1.png
-assetUrl: //tw93.fun/images/
+assetUrl:
 defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-

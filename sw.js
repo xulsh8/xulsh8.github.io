@@ -1,4 +1,4 @@
-const CACHE_NAME = "tw93-cache-v1";
+const CACHE_NAME = "xulsh-cache-v1";
 const FONT_BASE_URL = "https://gw.alipayobjects.com/os/k/jinkai/";
 const IMMUTABLE_ASSETS = [
   "https://gw.alipayobjects.com/os/k/s3/lightense.min.js",

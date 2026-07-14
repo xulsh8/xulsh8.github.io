@@ -1,0 +1,12 @@
+---
+layout: base
+body_id: post-index
+title: 笔记
+poem: 保持好奇，保持热情
+permalink: /notes.html
+comments: false
+hideHomeActive: true
+---
+
+{% assign tech_posts = site.posts | where_exp: "post", "post.section == 'note'" %}
+{% include post-item.html posts=tech_posts %}

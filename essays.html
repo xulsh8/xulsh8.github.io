@@ -1,0 +1,12 @@
+---
+layout: base
+body_id: post-index
+title: 杂谈
+poem: 寻找恰如其分的那个词
+permalink: /essays.html
+comments: false
+hideHomeActive: true
+---
+
+{% assign tech_posts = site.posts | where_exp: "post", "post.section == 'essay'" %}
+{% include post-item.html posts=tech_posts %}

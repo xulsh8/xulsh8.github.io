@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 大模型分布式训练 Distributed Data Parallel(DDP)的原理和实现
-data: 2026-06-02
-categories: Technique
+title: 模型训练——分布式DDP
+date: 2026-06-02
+section: note
+categories: ModelTrain
 ---
 
 ## 引入

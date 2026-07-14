@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "https://gems.ruby-china.com/"
 
 gem "jekyll"
 gem "jekyll-paginate"
@@ -8,3 +8,7 @@ gem "jekyll-feed"
 
 # Node.js 22+ compatibility
 gem "webrick"
+
+gem "tzinfo", "~> 2.0"
+
+gem "tzinfo-data", "~> 1.2026"
