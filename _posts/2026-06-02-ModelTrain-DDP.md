@@ -4,6 +4,7 @@ title: 模型训练——分布式DDP
 date: 2026-06-02
 section: note
 categories: ModelTrain
+summary: 本篇博客主要介绍分布式数据并行 DDP 的原理和基于 Pytorch 框架的 DDP 实现，记录了部分 Pytorch 的实现细节。
 ---
 
 ## 引入

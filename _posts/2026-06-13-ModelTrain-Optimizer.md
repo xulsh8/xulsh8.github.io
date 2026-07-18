@@ -5,6 +5,7 @@ date: 2026-06-13
 section: note
 categories: ModelTrain
 math: true
+summary: 本篇博客主要介绍基础的模型训练优化器，包括随机梯度下降、RMSProp、Adam等，并且记录在 Pytorch 框架下的优化器创建和部分内部细节。
 ---
 
 ## 引入
