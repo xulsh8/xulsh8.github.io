@@ -32,14 +32,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1.185.0
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3' # Matches .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
